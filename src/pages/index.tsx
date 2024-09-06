@@ -149,7 +149,7 @@ export default function Home() {
   const [preValue, setPreValue] = useState<string>("")
   const performSearch = (term: string) => {
     // Implement your search logic here
-    console.log(`Searching for: ${term}`);
+    //console.log(`Searching for: ${term}`);
     setPreValue(term)
     main(term).then((result) => {
       //console.log(result)
@@ -176,7 +176,7 @@ export default function Home() {
     if (data) updateTime();
   }, 1000);
   function inputChange(event: any) {
-    console.log("change");
+    //console.log("change");
     const value = event.target.value;
     main(value).then((result) => {
       //console.log(result)
